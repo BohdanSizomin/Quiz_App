@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lvl1text0">Zero</string>
+    <string name="lvl1text1">One</string>
+    <string name="lvl1text2">Two</string>
+    <string name="lvl1text3">Three</string>
+    <string name="lvl1text4">Four</string>
+    <string name="lvl1text5">Five</string>
+    <string name="lvl1text6">Six</string>
+    <string name="lvl1text7">Seven</string>
+    <string name="lvl1text8">Eight</string>
+    <string name="lvl1text9">Nine</string>
+
+
+    <string name="lvl2text0">I</string>
+    <string name="lvl2text1">II</string>
+    <string name="lvl2text2">III</string>
+    <string name="lvl2text3">IV</string>
+    <string name="lvl2text4">V</string>
+    <string name="lvl2text5">VI</string>
+    <string name="lvl2text6">VII</string>
+    <string name="lvl2text7">VIII</string>
+    <string name="lvl2text8">IX</string>
+    <string name="lvl2text9">X</string>
+
+    <string name="lvl3text0">Dog</string>
+    <string name="lvl3text1">Lion</string>
+    <string name="lvl3text2">Snake</string>
+    <string name="lvl3text3">Shark</string>
+    <string name="lvl3text4">Bear</string>
+    <string name="lvl3text5">Crocodile</string>
+    <string name="lvl3text6">Giraffe</string>
+    <string name="lvl3text7">Hippo</string>
+    <string name="lvl3text8">Elephant</string>
+    <string name="lvl3text9">Whale</string>
+
+
+
+
+
+
+
+</resources>

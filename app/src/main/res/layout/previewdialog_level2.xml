@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogbackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:background="@drawable/dialog"
+    android:orientation="vertical"
+    android:scaleType="centerCrop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/btnclose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:text="X"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/previewimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/exclam_mark" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textdescription_lvl2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="30"
+        android:text="@string/level_two"
+        android:textColor="@color/black95"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btncontinue"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/style_btn_stroke_black95_press_white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/textcontinue"
+        android:textAllCaps="true"
+        android:textColor="@color/black95"
+        android:textSize="24sp" />
+
+</LinearLayout>

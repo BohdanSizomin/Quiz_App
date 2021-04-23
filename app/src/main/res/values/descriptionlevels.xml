@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="level_one">Pick the biggest number</string>
+    <string name="level_two">Pick the biggest ROMAN numeral</string>
+    <string name="level_three">Who is the the biggest animal ?</string>
+
+
+    <string name="leveloneEnd">\n Congratulations !\n Level Completed!</string>
+    <string name="leveltwoEnd">\n Congratulations !\n Level Completed! </string>
+    <string name="levelthreeEnd">\n Congratulations !\n Level Completed! </string>
+
+</resources>
