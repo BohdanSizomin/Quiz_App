@@ -34,6 +34,28 @@
     <string name="lvl3text8">Elephant</string>
     <string name="lvl3text9">Whale</string>
 
+    <string name="lvl4text0">Empire State Building</string>
+    <string name="lvl4text1">Twin Towers</string>
+    <string name="lvl4text2">Shanghai World Financial Centre</string>
+    <string name="lvl4text3">Taipei 101</string>
+    <string name="lvl4text4">One World Trade Center</string>
+    <string name="lvl4text5">Lotte World Tower</string>
+    <string name="lvl4text6">Pingan International \nFinance Center</string>
+    <string name="lvl4text7">Makkah Royal \nClock Tower</string>
+    <string name="lvl4text8">Shanghai Tower</string>
+    <string name="lvl4text9">Burj Khalifa</string>
+
+    <string name="lvl5text0">Algeria</string>
+    <string name="lvl5text1">Kazakhstan</string>
+    <string name="lvl5text2">Argentina</string>
+    <string name="lvl5text3">India</string>
+    <string name="lvl5text4">Australia</string>
+    <string name="lvl5text5">Brazil</string>
+    <string name="lvl5text6">China</string>
+    <string name="lvl5text7">United States</string>
+    <string name="lvl5text8">Canada</string>
+    <string name="lvl5text9">Russia</string>
+
 
 
 

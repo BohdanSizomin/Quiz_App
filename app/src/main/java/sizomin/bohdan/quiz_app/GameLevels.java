@@ -27,7 +27,7 @@ public class GameLevels extends AppCompatActivity {
         SharedPreferences save = getSharedPreferences("Save",MODE_PRIVATE);
 
 //      Wiping saves
-//      save.edit().clear().commit();
+//save.edit().clear().commit();
 
 
 
@@ -72,7 +72,6 @@ public class GameLevels extends AppCompatActivity {
 
         //Move to 2nd level - start
         TextView textView2 = (TextView) findViewById(R.id.textView2);
-        //Move to 1st level - start
         textView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,8 +80,6 @@ public class GameLevels extends AppCompatActivity {
                         Intent intent = new Intent(GameLevels.this, Level2.class);
                         startActivity(intent);
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_from_left);
-
-
                         finish();
                     }
                 }
@@ -114,24 +111,61 @@ public class GameLevels extends AppCompatActivity {
         });
 //        Move to 3rd level - end
 
-            final int[] x={
-                    R.id.textView1,
-                    R.id.textView2,
-                    R.id.textView3
-            };
 
-            for (int i=1;i<level;i++){
-                TextView tv = findViewById(x[i]);
-                tv.setText(""+ (i+1));
+
+////        Move to 4th level - start
+        TextView textView4 = (TextView) findViewById(R.id.textView4);
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    if (level >= 4) {
+                        Intent intent = new Intent(GameLevels.this, Level4.class);
+                        startActivity(intent);
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_from_left);
+                        finish();
+                    }
+                }
+                catch(Exception e){
+
+                }
             }
+        });
+////        Move to 4th level - end
 
 
+////        Move to 5th level - start
+        TextView textView5 = (TextView) findViewById(R.id.textView5);
+        textView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    if (level >= 5) {
+                        Intent intent = new Intent(GameLevels.this, Level5.class);
+                        startActivity(intent);
+                        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_from_left);
+                        finish();
+                    }
+                }
+                catch(Exception e){
 
+                }
+            }
+        });
+////        Move to 5th level - end
 
+        final int[] x={
+                R.id.textView1,
+                R.id.textView2,
+                R.id.textView3,
+                R.id.textView4,
+                R.id.textView5
+        };
 
-
-
-
+        for (int i=1;i<level;i++){
+            TextView tv = findViewById(x[i]);
+            tv.setText(""+ (i+1));
+        }
 
 
         button_back.setOnClickListener(new View.OnClickListener() {

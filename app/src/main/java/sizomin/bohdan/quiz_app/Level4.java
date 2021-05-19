@@ -2,7 +2,6 @@ package sizomin.bohdan.quiz_app;
 
 import android.app.Dialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -14,14 +13,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
-public class Level3 extends AppCompatActivity{
+public class Level4 extends AppCompatActivity{
 
     Dialog dialog;
     Dialog dialogEnd;
@@ -40,7 +38,7 @@ public class Level3 extends AppCompatActivity{
     public void onBackPressed() {
         super.onBackPressed();
         try{
-            Intent intent = new Intent (Level3.this,GameLevels.class);
+            Intent intent = new Intent (Level4.this,GameLevels.class);
             startActivity(intent);
             overridePendingTransition(R.anim.slide_in_left,R.anim.slide_from_right);
             finish();
@@ -57,7 +55,7 @@ public class Level3 extends AppCompatActivity{
 
 
         TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level3);
+        text_levels.setText(R.string.level4);
 
 
 
@@ -94,7 +92,7 @@ public class Level3 extends AppCompatActivity{
 
 
     TextView textdescription = (TextView)dialog.findViewById(R.id.textdescription_lvl2);
-    textdescription.setText(R.string.level_three);
+    textdescription.setText(R.string.level_four);
 
 
 
@@ -107,7 +105,7 @@ public class Level3 extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 try {
-                    Intent i = new Intent(Level3.this,GameLevels.class);
+                    Intent i = new Intent(Level4.this,GameLevels.class);
                     startActivity(i);
                     overridePendingTransition(R.anim.slide_in_left,R.anim.slide_from_right);
                     finish();
@@ -145,7 +143,7 @@ public class Level3 extends AppCompatActivity{
 
 
         TextView textdescriptionEnd = (TextView)dialogEnd.findViewById(R.id.textdescriptionend);
-        textdescriptionEnd.setText(R.string.levelthreeEnd);
+        textdescriptionEnd.setText(R.string.levelfourEnd);
 
 //      Interesting fact - end
 
@@ -158,7 +156,7 @@ public class Level3 extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 try {
-                    Intent i = new Intent(Level3.this,GameLevels.class);
+                    Intent i = new Intent(Level4.this,GameLevels.class);
                     startActivity(i);
                     overridePendingTransition(R.anim.slide_in_left,R.anim.slide_from_right);
                     finish();
@@ -177,7 +175,7 @@ public class Level3 extends AppCompatActivity{
             public void onClick(View view) {
 
                 try{
-                    Intent i = new Intent(Level3.this,Level4.class);
+                    Intent i = new Intent(Level4.this,Level5.class);
                     startActivity(i);
                     overridePendingTransition(R.anim.slide_in_right,R.anim.slide_from_left);
                     finish();
@@ -197,7 +195,7 @@ public class Level3 extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 try{
-                Intent intent = new Intent (Level3.this,GameLevels.class);
+                Intent intent = new Intent (Level4.this,GameLevels.class);
                 startActivity(intent);
                     overridePendingTransition(R.anim.slide_in_left,R.anim.slide_from_right);
                 finish();
@@ -217,7 +215,7 @@ public class Level3 extends AppCompatActivity{
         //
 
 
-        final Animation a = AnimationUtils.loadAnimation(Level3.this,R.anim.alpha);
+        final Animation a = AnimationUtils.loadAnimation(Level4.this,R.anim.alpha);
 
 
 
@@ -225,8 +223,8 @@ public class Level3 extends AppCompatActivity{
 
 
 num_left = random.nextInt(10);
-img_left.setImageResource(array.images2[num_left]);
-text_left.setText(array.texts2[num_left]);
+img_left.setImageResource(array.images3[num_left]);
+text_left.setText(array.texts3[num_left]);
 
 
 
@@ -234,8 +232,8 @@ num_right= random.nextInt(10);
 while (num_left==num_right){
     num_right = random.nextInt(10);
 }
-img_right.setImageResource(array.images2[num_right]);
-text_right.setText(array.texts2[num_right]);
+img_right.setImageResource(array.images3[num_right]);
+text_right.setText(array.texts3[num_right]);
 
 
 
@@ -302,23 +300,13 @@ text_right.setText(array.texts2[num_right]);
                     }
 
                     if (count==10){
-                        SharedPreferences save = getSharedPreferences("Save",MODE_PRIVATE);
-
-                        final int level=save.getInt("Level",1);
-
-                        if (level >2){}
-                        else {
-                            SharedPreferences.Editor editor = save.edit();
-                            editor.putInt("Level", 4);
-                            editor.commit();
-                        }
                         dialogEnd.show();
                     }
                     else{
                         num_left = random.nextInt(10);
-                        img_left.setImageResource(array.images2[num_left]);
+                        img_left.setImageResource(array.images3[num_left]);
                         img_left.startAnimation(a);
-                        text_left.setText(array.texts2[num_left]);
+                        text_left.setText(array.texts3[num_left]);
 
 
 
@@ -326,9 +314,9 @@ text_right.setText(array.texts2[num_right]);
                         while (num_left==num_right){
                             num_right = random.nextInt(10);
                         }
-                        img_right.setImageResource(array.images2[num_right]);
+                        img_right.setImageResource(array.images3[num_right]);
                         img_right.startAnimation(a);
-                        text_right.setText(array.texts2[num_right]);
+                        text_right.setText(array.texts3[num_right]);
 
 
                         img_right.setEnabled(true);
@@ -403,27 +391,13 @@ text_right.setText(array.texts2[num_right]);
                     }
 
                     if (count==10){
-                        SharedPreferences save = getSharedPreferences("Save",MODE_PRIVATE);
-
-
-
-
-                        final int level=save.getInt("Level",1);
-
-                        if (level >3){}
-
-                        else {
-                            SharedPreferences.Editor editor = save.edit();
-                            editor.putInt("Level", 4);
-                            editor.commit();
-                        }
                         dialogEnd.show();
                     }
                     else{
                         num_right = random.nextInt(10);
-                        img_right.setImageResource(array.images2[num_right]);
+                        img_right.setImageResource(array.images3[num_right]);
                         img_right.startAnimation(a);
-                        text_right.setText(array.texts2[num_right]);
+                        text_right.setText(array.texts3[num_right]);
 
 
 
@@ -431,9 +405,9 @@ text_right.setText(array.texts2[num_right]);
                         while (num_left==num_right){
                             num_left = random.nextInt(10);
                         }
-                        img_left.setImageResource(array.images2[num_left]);
+                        img_left.setImageResource(array.images3[num_left]);
                         img_left.startAnimation(a);
-                        text_left.setText(array.texts2[num_left]);
+                        text_left.setText(array.texts3[num_left]);
 
 
                         img_left.setEnabled(true);
