@@ -62,12 +62,12 @@ public class Array {
 
     //Array for the third level - start
     final int[] images2={
+            R.drawable.three_levelthree,
             R.drawable.one_levelthree,
             R.drawable.two_levelthree,
-            R.drawable.three_levelthree,
-            R.drawable.four_levelthree,
             R.drawable.five_levelthree,
             R.drawable.six_levelthree,
+            R.drawable.four_levelthree,
             R.drawable.seven_levelthree,
             R.drawable.eight_levelthree,
             R.drawable.nine_levelthree,
@@ -78,12 +78,12 @@ public class Array {
     };
 
     final int[] texts2 = {
+            R.string.lvl3text2,
             R.string.lvl3text0,
             R.string.lvl3text1,
-            R.string.lvl3text2,
-            R.string.lvl3text3,
             R.string.lvl3text4,
             R.string.lvl3text5,
+            R.string.lvl3text3,
             R.string.lvl3text6,
             R.string.lvl3text7,
             R.string.lvl3text8,
