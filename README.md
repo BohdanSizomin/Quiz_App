@@ -6,5 +6,4 @@ For each correct answer, players earn +1 points, for each false -2 .
 Language:Java
 IDE:Android Studio
 
-Video preview: https://drive.google.com/file/d/15kfAEySWySXhBPV5Bv2gjOJDAmAjEPl8/view?usp=sharing
-
+Video preview: 
